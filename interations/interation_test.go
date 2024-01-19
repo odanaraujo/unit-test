@@ -2,7 +2,6 @@ package interations
 
 import (
 	"fmt"
-	"reflect"
 	"testing"
 )
 
@@ -10,7 +9,7 @@ func TestRepeat(t *testing.T) {
 	got := Repeat("a")
 	expected := "aaaaa"
 
-	if reflect.DeepEqual(expected, got) {
+	if got != expected {
 		t.Errorf("expected %s but got %s", expected, got)
 	}
 }

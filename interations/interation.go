@@ -8,5 +8,5 @@ func Repeat(caracterer string) string {
 		caractererRepeat += caracterer
 	}
 
-	return caracterer
+	return caractererRepeat
 }
